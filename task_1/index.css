@@ -66,11 +66,16 @@ body {
 }
 
 .title h2 {
-  background: linear-gradient(to top, #4b5561 40px, #ff7900 10px);
+  background: linear-gradient(to top, #4b5561 41px, #ff7900 10px);
   padding: 0 60px 0 0;
   background-clip: text;
   color: transparent;
   font-size: 40px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .text-section ul li {

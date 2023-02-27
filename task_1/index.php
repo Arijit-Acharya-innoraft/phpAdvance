@@ -77,7 +77,7 @@
               <div class="text-section col">
                 <div class="title">
                   <!--Printing the titles of a section.  -->
-                  <h2><?php echo $store_titles ?></h2>
+                  <h2> <a href="<?php echo $store_explore_link ?>"><?php echo $store_titles ?></a></h2>
                 </div>
                 <div class="body">
                   <!-- Printing the body of a section. -->
