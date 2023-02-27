@@ -1,0 +1,101 @@
+/**
+* General section.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+* Form section.
+*/
+.form-section {
+    background: url("Images/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg")no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/**
+*Container of the form.
+*/
+.container {
+    width: 315px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/**
+*Styling the form attribute.
+*/
+form {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/**
+*Stylling the input tags.
+*/
+input {
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+input:focus {
+    outline-style: none;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+/**
+*Styling the span tag where the errors are written.
+*/
+span {
+    display: block;
+    margin: 5px 25px;
+    color: crimson;
+}
+
+/**
+*Styling the button tag.
+*/
+button {
+    padding: 5px 10px;
+    border: none;
+    background: crimson;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin: -5px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+button:hover {
+    background-color: white;
+    color: crimson;
+}
+
+/**
+*Styling the h1 tag where the submission status is written.
+*/
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0;
+}

@@ -1,0 +1,125 @@
+/*
+*General Section
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*
+ * To fix the whole page in a fixed width
+*/
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* 
+*Css for each section.
+*/
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+/* 
+*To toggle the direction between the image and text.
+*/
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* 
+*Giving the image and the text columns 50% width
+*/
+.col {
+  width: 50%;
+}
+
+/* 
+*Css for the image section.
+*/
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+/* 
+* Css for the text section.
+*/
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.title h2 {
+  background: linear-gradient(to top, #4b5561 40px, #ff7900 10px);
+  padding: 0 60px 0 0;
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+}
+
+.text-section ul li {
+  list-style: none;
+  padding: 5px 0;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.text-section ul li a {
+  text-decoration: none;
+  color: #4b5561;
+}
+
+/* 
+*To remove the extra space that ul creates.
+*/
+ul {
+  padding-inline-start: 0;
+}
+
+/* 
+* To create the bullets before the li text.
+*/
+li::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 2px solid #ff7900;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  top: 5px;
+}
+
+/* 
+* Css for the explore button.
+*/
+.button {
+  margin-bottom: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid #ffa500;
+  font-weight: 600;
+  border-radius: 5px;
+}

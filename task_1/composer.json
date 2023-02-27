@@ -1,0 +1,6 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "kint-php/kint": "^5.0"
+    }
+}
