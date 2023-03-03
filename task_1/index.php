@@ -56,21 +56,21 @@
         $prefix_link = "https://ir-dev-d9.innoraft-sites.com/";
 
         // Iterating for fetching the title, image, links, body $len times.
-        for ($i = 0; $i < $len; $i++) {
+        foreach($main_response_data['data'] as $m_data) {
 
           // Fetching titles and storing.
-          $store_titles = $main_response_data['data'][$i]['attributes']['title'];
+          $store_titles = $m_data['attributes']['title'];
 
           // Fetching the values of a section's body.
-          $list_items = $main_response_data['data'][$i]['attributes']['field_services'];
+          $list_items = $m_data['attributes']['field_services'];
 
           // calling api for getting the image and storing it in $store_image variable.
-          $image_get_api = $main_response_data['data'][$i]['relationships']['field_image']['links']['related']['href'];;
+          $image_get_api = $m_data['relationships']['field_image']['links']['related']['href'];;
           $image_response_data = $this->getData($image_get_api);
           $store_image = $prefix_link .  $image_response_data['data']['attributes']['uri']['url'];
 
           // calling api for getting the explore link and storing it in $store_explore_link variable.
-          $explore_link_get_api = $main_response_data['data'][$i]['links']['self']['href'];
+          $explore_link_get_api = $m_data['links']['self']['href'];
           $explore_link_data = $this->getData($explore_link_get_api);
           $store_explore_link = $prefix_link . $explore_link_data['data']['attributes']['path']['alias'];
 
